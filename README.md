@@ -28,13 +28,6 @@ Run the frontend server in development mode:
    ```
 Navigate to `http://localhost:4200/` in your browser.
 
-### Build
-To build the frontend for production:
-   ```bash
-   npm run build
-   ```
-The build artifacts will be stored in the `dist/` directory.
-
 ## Backend Setup and Run
 
 ### Installation

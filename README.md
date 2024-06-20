@@ -24,7 +24,7 @@ Before running the application, ensure you have the following installed:
 ### Development Server
 Run the frontend server in development mode:
    ```bash
-   ng serve
+   npm start
    ```
 Navigate to `http://localhost:4200/` in your browser.
 
@@ -64,7 +64,7 @@ The backend will start running on `http://localhost:3000/`.
 ### Frontend Tests
 Run frontend unit tests using Karma and Jasmine:
    ```bash
-   ng test
+   npm test
    ```
 
 ### Backend Tests

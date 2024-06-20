@@ -4,7 +4,8 @@
 This project is a task management application developed using Angular for the frontend and Node.js with Express for the backend. It utilizes MongoDB as the database for storing tasks.
 
 ## Prerequisites
-First of all you need to clone the repository
+First of all you need to clone the repository.
+
 Before running the application, ensure you have the following installed:
 - Node.js
 - npm

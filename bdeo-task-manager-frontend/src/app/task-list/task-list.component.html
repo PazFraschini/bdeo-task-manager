@@ -1,0 +1,84 @@
+<div class="task-list">
+    <h1>Bdeo Task Manager</h1>
+    <div class="dashboard">
+      <!-- Columna To-Do -->
+      <div class="task-column" cdkDrop>
+        <h2>
+          <span class="status-to-do">To-Do</span>
+          <button class="btn-add-task" (click)="openNewTaskModal()">New Task +</button>
+        </h2>
+        <div cdkDrag *ngFor="let task of tasksToDo" class="task-card" [ngClass]="getCardColorClass(task.status)">
+          <div class="task-header">
+            <h3 (click)="openTaskDetailsModal(task._id ?? '')">{{ task.title }}</h3>
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item (click)="openTaskDetailsModal(task._id ?? '')">
+                <mat-icon>edit</mat-icon>
+                <span>Edit</span>
+              </button>
+              <button mat-menu-item (click)="deleteTask(task._id ?? '')">
+                <mat-icon>delete</mat-icon>
+                <span>Delete</span>
+              </button>
+            </mat-menu>
+          </div>
+          <p (click)="openTaskDetailsModal(task._id ?? '')">{{ task.description }}</p>
+        </div>
+      </div>
+  
+      <!-- Columna In Progress -->
+      <div class="task-column" cdkDrop>
+        <h2>
+          <span class="status-in-progress">In-Progress</span>
+        </h2>
+        <div cdkDrag *ngFor="let task of tasksInProgress" class="task-card" [ngClass]="getCardColorClass(task.status)">
+          <div class="task-header">
+            <h3 (click)="openTaskDetailsModal(task._id ?? '')">{{ task.title }}</h3>
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item (click)="openTaskDetailsModal(task._id ?? '')">
+                <mat-icon>edit</mat-icon>
+                <span>Edit</span>
+              </button>
+              <button mat-menu-item (click)="deleteTask(task._id ?? '')">
+                <mat-icon>delete</mat-icon>
+                <span>Delete</span>
+              </button>
+            </mat-menu>
+          </div>
+          <p (click)="openTaskDetailsModal(task._id ?? '')">{{ task.description }}</p>
+        </div>
+      </div>
+  
+      <!-- Columna Complete -->
+      <div class="task-column" cdkDrop>
+        <h2>
+          <span class="status-complete">Done</span>
+        </h2>
+        <div cdkDrag *ngFor="let task of tasksComplete" class="task-card" [ngClass]="getCardColorClass(task.status)">
+          <div class="task-header">
+            <h3 (click)="openTaskDetailsModal(task._id ?? '')">{{ task.title }}</h3>
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item (click)="openTaskDetailsModal(task._id ?? '')">
+                <mat-icon>edit</mat-icon>
+                <span>Edit</span>
+              </button>
+              <button mat-menu-item (click)="deleteTask(task._id ?? '')">
+                <mat-icon>delete</mat-icon>
+                <span>Delete</span>
+              </button>
+            </mat-menu>
+          </div>
+          <p (click)="openTaskDetailsModal(task._id ?? '')">{{ task.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

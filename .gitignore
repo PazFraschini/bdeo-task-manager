@@ -1,0 +1,33 @@
+# Node Modules
+bdeo-task-manager-frontend/node_modules/
+bdeo-task-manager-backend/node_modules/
+
+# Frontend Dependencies
+bdeo-task-manager-frontend/dist/
+bdeo-task-manager-frontend/*.js
+bdeo-task-manager-frontend/*.js.map
+bdeo-task-manager-frontend/*.css
+bdeo-task-manager-frontend/.angular/cache/
+
+# Backend dependencies
+bdeo-task-manager-backend/dist/
+bdeo-task-manager-backend/*.log
+
+# Config files
+bdeo-task-manager-frontend/.env
+bdeo-task-manager-backend/.env
+
+# Dependencies npm/yarn
+bdeo-task-manager-frontend/package-lock.json
+bdeo-task-manager-frontend/yarn.lock
+bdeo-task-manager-backend/package-lock.json
+bdeo-task-manager-backend/yarn.lock
+
+# Logs
+bdeo-task-manager-frontend/*.log
+bdeo-task-manager-backend/*.log
+
+# Archivos específicos de IDE (opcional, dependiendo de tu entorno de desarrollo)
+.vscode/
+.idea/
+

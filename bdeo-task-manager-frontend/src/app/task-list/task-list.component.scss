@@ -1,0 +1,120 @@
+.task-list {
+    padding: 20px;
+  
+    .dashboard {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+  
+    .task-column {
+      flex: 1;
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+      max-height: 70vh;
+      overflow-y: auto;
+  
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      h2 {
+        display: flex; /* Hacer que el título sea un flex-container */
+        align-items: center; /* Centrar elementos verticalmente */
+        justify-content: space-between; /* Espacio entre el título y el botón */
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 5px; /* Agregar padding para hacerlo más visible */
+        border-radius: 5px; /* Redondear bordes */
+        text-transform: uppercase; /* Convertir a mayúsculas */
+        font-weight: bold; /* Negrita */
+  
+        .btn-add-task {
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 3px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+  
+      .task-card {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: box-shadow 0.3s ease;
+  
+        &:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+  
+        .task-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 5px;
+  
+          h3 {
+            margin: 0;
+            font-size: 18px;
+          }
+  
+          .task-actions {
+            button {
+              background: none;
+              border: none;
+              cursor: pointer;
+              padding: 5px;
+            }
+          }
+        }
+  
+        p {
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  
+    .btn-create-task {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+    .bg-red {
+        background-color: #F08080;
+        color: black;
+      }
+      
+      .bg-yellow {
+        background-color: #FFFACD;
+        color: black;
+      }
+      
+      .bg-green {
+        background-color: #8FBC8F;
+        color: black;
+      }
+  }
+  
